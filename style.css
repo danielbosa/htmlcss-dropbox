@@ -9,8 +9,12 @@ ul{
     list-style: none;
 }
 
+img{
+    width: 100%;
+}
+
 body{
-    font-style: ;
+    font-style: Open Sans, sans-serif;
 }
 
 :root {
@@ -34,6 +38,16 @@ body{
     border: 2px solid blue;
 }
 
+/* header */
+
+header{
+    margin-top: 62px;
+}
+
+header{
+    background-color: var(--color-bg-hero);
+}
+
 /* width */
 
 .container-1200{
@@ -52,8 +66,70 @@ body{
     width: 100%;
 }
 
+/* utility flex */
+
+.d-flex{
+    display: flex;
+}
+
+.sp-between{
+    justify-content: space-between;
+}
+
+.a-center{
+    align-items: center;
+    align-content: center;
+}
+
+/* position */
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.p-rel{
+    position: relative;
+}
+
+.p-abs{
+    position: absolute
+}
+
+/* txt */
+
+.txt-center{
+    text-align: center;
+}
+
 /* margin */
 
 .mg-auto{
     margin: auto;
+}
+
+.mg-r-10{
+    margin-right: 10px;
+}
+
+/* padding */
+
+.pd-10{
+    padding: 15px;
+}
+
+/* button */
+
+.btn{
+    color: white;
+    background-color: var(--color-button);
+    padding: 6px 12px;
+}
+
+/* decoration */
+
+a{
+    text-decoration: none;
 }
