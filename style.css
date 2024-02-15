@@ -14,8 +14,10 @@ img{
 }
 
 body{
-    font-style: Open Sans, sans-serif;
-    background-color: var(--color-mainblock);
+    font-family: 'Open Sans', sans-serif;
+    background-color: green;
+    color: #000000;
+    font-size: 14px;
 }
 
 :root {
@@ -50,7 +52,7 @@ header{
 
 /* main */
 main{
-    margin-top: 67px;
+    margin-top: 60px;
 }
 
 /* width */
@@ -69,6 +71,10 @@ main{
 
 .width-100{
     width: 100%;
+}
+
+.width-80{
+    width: 80%;
 }
 
 .left{
@@ -92,6 +98,19 @@ main{
 .a-center{
     align-items: center;
     align-content: center;
+}
+
+.a-self{
+    align-self: stretch;
+}
+
+.a-content{
+    align-content: stretch;
+}
+
+.a-start{
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 /* position */
@@ -125,10 +144,11 @@ h1{
 
 .txt-center{
     text-align: center;
-    font-weight: 900;
 }
 
 /* color */
+
+
 #hero{
     max-width: 100%;
     background-color: var(--color-bg-hero);
@@ -144,6 +164,10 @@ h1{
     margin-right: 10px;
 }
 
+.mg-r-30{
+    margin-right: 30px;
+}
+
 .mg-t-10{
     margin-top: 10px;
 }
@@ -152,9 +176,18 @@ h1{
     margin-top: 20px;
 }
 
+.mg-t-30{
+    margin-top: 30px;
+}
+
 .mg-t-40{
     margin-top: 40px;
 }
+
+.mg-t-50{
+    margin-top: 50px;
+}
+
 
 .mg-t-60{
     margin-top: 60px;
@@ -162,6 +195,10 @@ h1{
 
 .mg-t-70{
     margin-top: 70px;
+}
+
+.mg-t-80{
+    margin-top: 80px;
 }
 
 .mg-t-90{
@@ -181,10 +218,15 @@ h1{
 }
 
 
+
 /* padding */
 
 .pd-15{
     padding: 15px;
+}
+
+.pd-t-80{
+    padding-top: 80px;
 }
 
 /* button */
@@ -193,10 +235,31 @@ h1{
     color: white;
     background-color: var(--color-button);
     padding: 6px 12px;
+    display: inline-block;
 }
 
 /* decoration */
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* plan */
+
+.plan-column{
+    width: calc(100% / 3 - 30px);
+    border: 1px solid gray;
+}
+
+.plan-name{
+    border-bottom: 1px solid gray;
+}
+
+.plan-column *:not(h3){
+    font-size: 12px;
 }
