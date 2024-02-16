@@ -13,9 +13,13 @@ img{
     width: 100%;
 }
 
+img:NOT(header img){
+    display: block;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: green;
+    background-color: var(--color-mainblock);
     color: #000000;
     font-size: 14px;
 }
@@ -298,6 +302,10 @@ hr{
     padding-top: 30px;
 }
 
+.pd-t-50{
+    padding-top: 50px;
+}
+
 .pd-t-80{
     padding-top: 80px;
 }
@@ -329,6 +337,25 @@ hr{
 
 .btn-full{
     width: 100%;
+}
+
+/* ATTN */
+/* |||||||||||||||||||||||| */
+/* CAMBIARE NOME A btn2 */
+
+.btn2{
+    width: calc(100% / 3 - 55px);
+}
+
+.btn-2{
+    color: black;
+    background-color: var(--color-mainblock);
+    padding: 6px 12px;
+    display: inline-block;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
 
 /* decoration */
@@ -364,7 +391,4 @@ a:NOT(.a-std):hover{
     font-size: 12px;
 }
 
-.btn2{
-    width: calc(100% / 3 - 55px);
-}
 
