@@ -20,15 +20,15 @@
         <nav class="d-flex sp-between">
             <ul class="d-flex a-center">
                 <li class="pd-15"><img src="./img/logo-small.png" alt=""></li>
-                <li class="pd-15"><a href="">Perché Dropbox</a></li>
-                <li class="pd-15"><a href="">Funzioni</a></li>
-                <li class="pd-15"><a href="">Piani e Prezzi</a></li>
+                <li><a href="" class="pd-15">Perché Dropbox</a></li>
+                <li><a href="" class="pd-15">Funzioni</a></li>
+                <li><a href="" class="pd-15">Piani e Prezzi</a></li>
             </ul>
             <ul class="d-flex a-center">
-                <li class="pd-15"><a href="">Supporto</a></li>
-                <li class="pd-15"><a href="">Contatta l'ufficio vendite</a></li>
-                <li class="pd-15"><a href="">Accedi</a></li>
-                <li class="pd-15 mg-r-10"><a href="" class="btn">Inizia</a></li>
+                <li><a href="" class="pd-15">Supporto</a></li>
+                <li><a href="" class="pd-15">Contatta l'ufficio vendite</a></li>
+                <li><a href="" class="pd-15">Accedi</a></li>
+                <li class="mg-r-10"><a href="" class="btn pd-15">Inizia</a></li>
             </ul>
         </nav>
     </header>
@@ -50,22 +50,35 @@
         <section class="debug2 container-800 mg-auto pd-t-80">
             <h2>Trova il piano business che fa per te</h2>
             <div class="mg-t-40">
-                <span class="mg-r-30"><input type="radio"> Fatturazione mensile</span>
-                <span class="mg-r-30"><input type="radio"> Fatturazione annuale</span>
+                <input type="radio" id="monthly" name="plan" value="monthly">
+                <label for="monthly" class="mg-r-30">Fatturazione mensile</label>
+                <input type="radio" id="yearly" name="plan" value="yearly">
+                <label for="yearly">Fatturazione annuale</label>
             </div>
-            <div class="d-flex sp-between">
+            <div class="d-flex sp-between mg-t-30">
                 <div class="plan-column">
-                    <div class="txt-center plan-name">Singolo</div>
-                    <div class="width-80 mg-auto">
-                        <h3>Professional</h3>
-                        <div>€ 12.00</div>
-                        <div>/mese</div>
-                        <ul>
-                            <li>1 utente</li>
-                            <li>5 TB di spazio</li>
-                            <li>Funzioni</li>
+                    <div class="txt-center plan-name pd-5"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="width-80 mg-auto debug2">
+                        <h3 class="pd-t-30">Professional</h3>
+                        <div class="pd-t-20"><strong>€ 12.00</strong></div>
+                        <div class="txt-secondary">/mese</div>
+                        <ul class="pd-t-30 c-flex debug1">
+                            <li class="d-flex a-base">
+                                <i class="fa-solid fa-user"></i>
+                                <div class="mg-l-5">1 utente</div>
+                            </li>
+                            <li class="d-flex a-base pd-t-10">
+                                <i class="fa-solid fa-folder"></i>
+                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                            </li>
+                            <li class="d-flex a-base pd-t-10">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <div class="mg-l-5">Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </li>
                         </ul>
-                        <a href="" class="btn mg-t-40 txt-center">Prova gratis per 30 giorni</a>
+                        <a href="" class="btn btn-full mg-t-40 mg-b-30 txt-center">Prova gratis per 30 giorni</a>
+                        <div>oppure <a href="" class="a-std">acquista ora</a></div>
+                        <h4>Punti salienti del piano</h4>
                     </div>
                 </div>
                 <div class="plan-column">
