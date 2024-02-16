@@ -70,12 +70,20 @@ main{
     max-width: 800px;
 }
 
-.width-80{
-    width: 80%;
-}
-
 .width-100{
     width: 100%;
+}
+
+.width-95{
+    width: 95%;
+}
+
+.width-90{
+    width: 90%;
+}
+
+.width-80{
+    width: 80%;
 }
 
 .width-30{
@@ -322,6 +330,9 @@ a:hover{
 
 .plan-column{
     width: calc(100% / 3 - 30px);
+}
+
+.plan-border{
     border: 1px solid gray;
 }
 
@@ -329,8 +340,11 @@ a:hover{
     border-bottom: 1px solid gray;
 }
 
-.plan-column *:not(h3){
+.plan-border *:not(h3){
     font-size: 12px;
 }
 
+.plan-column{
+    width: calc(100% / 3 - 30px);
+}
 
