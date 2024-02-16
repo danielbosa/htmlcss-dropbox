@@ -70,12 +70,20 @@ main{
     max-width: 800px;
 }
 
+.width-80{
+    width: 80%;
+}
+
 .width-100{
     width: 100%;
 }
 
-.width-80{
-    width: 80%;
+.width-30{
+    width: 30%;
+}
+
+.width-20{
+    width: 20%;
 }
 
 .left{
@@ -152,15 +160,11 @@ h1{
     font-size: 4em;
 }
 
-
-
 .txt-center{
     text-align: center;
 }
 
 /* color */
-
-
 #hero{
     max-width: 100%;
     background-color: var(--color-bg-hero);
@@ -168,6 +172,14 @@ h1{
 
 .txt-secondary{
     color: gray;
+}
+
+hr{
+    border: 1px solid gray;
+}
+
+.check-ok{
+    color: var(--color-button)
 }
 
 /* margin */
@@ -195,7 +207,6 @@ h1{
 .mg-t-50{
     margin-top: 50px;
 }
-
 
 .mg-t-60{
     margin-top: 60px;
@@ -227,6 +238,10 @@ h1{
 
 .mg-b-30{
     margin-bottom: 30px;
+}
+
+.mg-b-40{
+    margin-bottom: 40;
 }
 
 .mg-r-10{
@@ -275,6 +290,10 @@ h1{
     padding-top: 80px;
 }
 
+.pd-b-40{
+    padding-bottom: 40px;
+}
+
 /* button */
 
 .btn{
@@ -313,3 +332,5 @@ a:hover{
 .plan-column *:not(h3){
     font-size: 12px;
 }
+
+
