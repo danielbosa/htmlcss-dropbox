@@ -27,14 +27,15 @@ body{
 :root {
 	--color-bg-hero: #b4d0e7;
 	--color-block-darkblue: #0d2481;
-	--color-block-darkred: #d5001f;
+    --color-asu: #630c2f;
 	--color-bg-footer: #000000;
 	--color-block-lightred: #ff1c1c;
 	--color-block-yellow: #ffd830;
 	--color-button: #0061ff;
-	--color-mainblock: #f5f5f5;
+	--color-mainblock: #ffffff;
 	--color-block-lightgreen: #a2d39b;
 	--color-block-lightblue: #0093ce;
+    --color-bg-2: #F5F5F5;
 }
 
 .debug1{
@@ -58,6 +59,30 @@ header{
 /* main */
 main{
     margin-top: 59px;
+}
+
+/* summary */
+
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+details[open] > summary::after {
+    transform: rotate(180deg);
 }
 
 /* width */
@@ -90,6 +115,19 @@ main{
     width: 80%;
 }
 
+.width-50{
+    width: 50%;
+}
+
+.width-35{
+    width: 35%;
+}
+
+
+.width-33{
+    width: 33.333%;
+}
+
 .width-30{
     width: 30%;
 }
@@ -117,8 +155,16 @@ main{
     flex-direction: column;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .sp-between{
     justify-content: space-between;
+}
+
+.j-start{
+    justify-content: flex-start;
 }
 
 .a-center{
@@ -141,6 +187,10 @@ main{
 
 .a-base{
     align-items: baseline;
+}
+
+.gap{
+    gap: 50px 30px;
 }
 
 /* position */
@@ -180,9 +230,17 @@ h3{
     text-align: center;
 }
 
+.txt-12{
+    font-size: 12px;
+}
+
 /* color */
 #hero{
     max-width: 100%;
+    background-color: var(--color-bg-hero);
+}
+
+.bg-section{
     background-color: var(--color-bg-hero);
 }
 
@@ -326,10 +384,15 @@ hr{
     padding-bottom: 40px;
 }
 
+.pd-b-60{
+    padding-bottom: 60px;
+}
+
 /* button */
 
 .btn{
     color: white;
+    text-decoration: none;
     background-color: var(--color-button);
     padding: 6px 12px;
     display: inline-block;
@@ -349,9 +412,13 @@ hr{
 
 .btn-2{
     color: black;
+    text-decoration: none;
     background-color: var(--color-mainblock);
     padding: 6px 12px;
     display: inline-block;
+}
+
+.btn-border{
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 2px solid black;
@@ -360,13 +427,19 @@ hr{
 
 /* decoration */
 
-a:NOT(.a-std){
+/* .a-prim{
     text-decoration: none;
     color: var(--color-mainblock);
-}
+} */
 
-nav a:NOT(.a-nav){
+/* a:NOT(.a-std){
+    text-decoration: none;
+    color: var(--color-mainblock);
+} */
+
+nav a:NOT(.btn){
     color: black;
+    text-decoration: none;
 }
 
 a:NOT(.a-std):hover{
@@ -391,4 +464,62 @@ a:NOT(.a-std):hover{
     font-size: 12px;
 }
 
+/* features card */
 
+.card{
+    width: calc(100% / 3 - 30px);
+}
+
+/* sponsor */
+
+.logo{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.center-logo{
+    background-color: var(--color-bg-2);
+}
+
+.logo>img{
+    filter: invert(100%);
+}
+
+#logo-designit{
+    background-color: var(--color-block-lightgreen);
+}
+
+#logo-asu{
+    background-color: var(--color-asu)
+}
+
+#logo-uf{
+    background-color: var(--color-block-lightblue);
+}
+
+#logo-topps{
+    background-color: var(--color-block-lightred);
+}
+
+#logo-designit{
+    background-color: var(--color-block-lightgreen);
+}
+
+#logo-wbr{
+    background-color: var(--color-block-lightred);
+}
+
+#logo-hearst{
+    background-color: var(--color-bg-hero);
+}
+
+#logo-planet{
+    background-color: var(--color-block-darkblue);
+}
+
+#logo-channel{
+    background-color: var(--color-block-yellow);
+}
