@@ -168,6 +168,10 @@ h1{
     font-size: 4em;
 }
 
+h3{
+    font-size: 18px;
+}
+
 .txt-center{
     text-align: center;
 }
@@ -298,6 +302,18 @@ hr{
     padding-top: 80px;
 }
 
+.pd-l-25{
+    padding-left: 25px;
+}
+
+.pd-r-25{
+    padding-right: 25px;
+}
+
+.pd-b-20{
+    padding-bottom: 20px;
+}
+
 .pd-b-40{
     padding-bottom: 40px;
 }
@@ -319,10 +335,14 @@ hr{
 
 a:NOT(.a-std){
     text-decoration: none;
+    color: var(--color-mainblock);
+}
+
+nav a:NOT(.a-nav){
     color: black;
 }
 
-a:hover{
+a:NOT(.a-std):hover{
     text-decoration: underline;
 }
 
@@ -344,7 +364,7 @@ a:hover{
     font-size: 12px;
 }
 
-.plan-column{
-    width: calc(100% / 3 - 30px);
+.btn2{
+    width: calc(100% / 3 - 55px);
 }
 
