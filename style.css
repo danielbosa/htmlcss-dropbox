@@ -41,6 +41,7 @@ body{
     --color-cta: #702a44;
 }
 
+/*************************/
 /* header */
 header{
     background-color: var(--color-bg-hero);
@@ -57,9 +58,71 @@ header{
 }
 
 header li:not(.no-pd){
-    padding: 20px;
+    padding: 20px 10px;
 }
 
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 61px;
+    background-color: var(--color-mainblock);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 500;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-team{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-team{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 70px; 
+    background-color: var(--color-mainblock);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 750;
+    white-space: nowrap;
+}
+
+.dropdown-team:hover .dropdown-content-team{
+    display: block;
+}
+
+/* header decoration */
+
+nav a:NOT(.btn){
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header li:not(.no-pd){
+    border-bottom: 1px solid var(--color-mainblock);
+}
+
+header li:not(.no-pd,.dropdown-content li):hover{
+    border-bottom: 1px solid var(--color-button);
+}
+
+.dropdown-content li:hover{
+    background-color: var(--color-button);
+    color: var(--color-mainblock);
+}
+
+.dropdown-content a{
+    padding: 20px;
+}
 
 /* main */
 main{
@@ -231,10 +294,6 @@ footer a{
 .a-center{
     align-items: center;
     align-content: center;
-}
-
-.a-content{
-    align-content: stretch;
 }
 
 .a-start{
@@ -499,22 +558,6 @@ hr{
 .btn-2:hover{
     background-color: gray;
     color: var(--color-mainblock);
-}
-
-
-/* decoration */
-
-nav a:NOT(.btn){
-    color: black;
-    text-decoration: none;
-}
-
-header li:not(.no-pd){
-    border-bottom: 1px solid var(--color-mainblock);
-    }
-
-header li:not(.no-pd):hover{
-    border-bottom: 1px solid var(--color-button);
 }
 
 /* plan */
