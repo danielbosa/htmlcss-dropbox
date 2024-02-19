@@ -74,6 +74,10 @@ main{
     display: inline-block;
 }
 
+.btn-column{
+    width: calc(100% / 3 - 55px);
+}
+
 /* summary */
 
 summary {
@@ -130,6 +134,12 @@ footer li{
 }
 
 footer div{
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--color-mainblock);
     font-size: 12px;
 }
 
@@ -463,18 +473,6 @@ hr{
     display: inline-block;
 }
 
-.btn-full{
-    width: 100%;
-}
-
-/* ATTN */
-/* |||||||||||||||||||||||| */
-/* CAMBIARE NOME A btn2 */
-
-.btn2{
-    width: calc(100% / 3 - 55px);
-}
-
 .btn-2{
     color: black;
     text-decoration: none;
@@ -490,33 +488,34 @@ hr{
     border-left: 2px solid black;
 }
 
+.btn-full{
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: #3482ff;
+}
+
+.btn-2:hover{
+    background-color: gray;
+    color: var(--color-mainblock);
+}
+
+
 /* decoration */
-
-/* .a-prim{
-    text-decoration: none;
-    color: var(--color-mainblock);
-} */
-
-/* a:NOT(.a-std){
-    text-decoration: none;
-    color: var(--color-mainblock);
-} */
 
 nav a:NOT(.btn){
     color: black;
     text-decoration: none;
 }
 
+header li:not(.no-pd){
+    border-bottom: 1px solid var(--color-mainblock);
+    }
+
 header li:not(.no-pd):hover{
     border-bottom: 1px solid var(--color-button);
 }
-
-footer a{
-    text-decoration: none;
-    color: var(--color-mainblock);
-    font-size: 12px;
-}
-
 
 /* plan */
 
