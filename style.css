@@ -36,6 +36,7 @@ body{
 	--color-block-lightgreen: #a2d39b;
 	--color-block-lightblue: #0093ce;
     --color-bg-2: #F5F5F5;
+    --color-cta: #702a44;
 }
 
 .debug1{
@@ -127,6 +128,10 @@ footer h3{
 
 footer li{
     padding-bottom: 5px;
+}
+
+footer div{
+    font-size: 12px;
 }
 
 /* width */
@@ -304,7 +309,7 @@ footer li{
 }
 
 .mg-b-40{
-    margin-bottom: 40;
+    margin-bottom: 40px;
 }
 
 .mg-r-10{
@@ -363,6 +368,10 @@ footer li{
 
 .pd-t-100{
     padding-top: 100px;
+}
+
+.pd-t-120{
+    padding-top: 120px;
 }
 
 .pd-l-25{
@@ -431,6 +440,10 @@ hr{
 
 .check-ok{
     color: var(--color-button)
+}
+
+.txt-cta{
+    color: var(--color-cta);
 }
 
 /* button */
@@ -522,6 +535,10 @@ footer a{
     width: calc(100% / 3 - 30px);
 }
 
+.card h3, .card p{
+    padding-top: 20px;
+}
+
 /* sponsor */
 
 .logo{
@@ -534,6 +551,8 @@ footer a{
 
 .center-logo{
     background-color: var(--color-bg-2);
+    min-height: 100%;
+    overflow-y: auto;
 }
 
 /* filter color img sponsor */

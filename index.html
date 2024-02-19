@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Dropbox</title>
 </head>
-
 <body>
     <header class="width-100">
+        <!-- nav bar -->
         <nav class="d-flex sp-between">
             <ul class="d-flex a-center">
                 <li class="pd-15"><img src="./img/logo-small.png" alt=""></li>
@@ -33,6 +33,7 @@
         </nav>
     </header>
     <main>
+        <!-- hero -->
         <div class="container-1200" id="hero">
             <div class="container-1000 mg-auto">
                 <h1 class="pd-t-80">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
@@ -47,10 +48,11 @@
                 </div>
             </div>
         </div>
-        <section class="container-800 mg-auto pd-t-80">
+        <!-- section plans -->
+        <section class="container-800 mg-auto pd-t-120">
             <h2>Trova il piano business che fa per te</h2>
             <div class="mg-t-40">
-                <input type="radio" id="monthly" name="plan" value="monthly">
+                <input type="radio" id="monthly" name="plan" value="monthly" checked>
                 <label for="monthly" class="mg-r-30">Fatturazione mensile</label>
                 <input type="radio" id="yearly" name="plan" value="yearly">
                 <label for="yearly">Fatturazione annuale</label>
@@ -59,7 +61,6 @@
                 <!-- Single -->
                 <div class="plan-column plan-border">
                     <div class="txt-center plan-name pd-5"><i class="fa-solid fa-user"></i> Singolo</div>
-                    <!-- <div class="width-80 mg-auto"> -->
                     <div class="pd-r-25 pd-l-25">
                         <h3 class="pd-t-30 pd-b-20">Professional</h3>
                         <div><strong>€ 12.00</strong></div>
@@ -85,11 +86,11 @@
                         <ul class="pd-t-30 pd-b-40 c-flex">
                             <li class="d-flex a-base">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">1 utente</div>
+                                <div class="mg-l-5">Invia file fino a 100 GB con Dropbox Transfert</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Cartelle offline su dispositivi mobili</div>
                             </li>
                         </ul>
                     </div>
@@ -97,23 +98,22 @@
                 <!-- Team -->
                 <div class="plan-column plan-border">
                     <div class="txt-center plan-name pd-5"><i class="fa-solid fa-users"></i> Team</div>
-                    <!-- <div class="width-80 mg-auto"> -->
                     <div class="pd-r-25 pd-l-25">
-                        <h3 class="pd-t-30 pd-b-20">Professional</h3>
-                        <div><strong>€ 12.00</strong></div>
-                        <div class="txt-secondary">/mese</div>
+                        <h3 class="pd-t-30 pd-b-20">Advanced</h3>
+                        <div><strong>€ 18.00</strong></div>
+                        <div class="txt-secondary">/utente/mese</div>
                         <ul class="pd-t-30 pd-b-40 c-flex">
                             <li class="d-flex a-base">
                                 <i class="fa-solid fa-user"></i>
-                                <div class="mg-l-5">1 utente</div>
+                                <div class="mg-l-5">3 o più utenti</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-folder"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Tutto lo spazio di cui ha bisogno il tuo team</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-share-nodes"></i>
-                                <div class="mg-l-5">Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                                <div class="mg-l-5">Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
                             </li>
                         </ul>
                         <a href="" class="btn btn-full mg-b-30 txt-center">Prova gratis per 30 giorni</a>
@@ -123,67 +123,69 @@
                         <ul class="pd-t-30 pd-b-40 c-flex">
                             <li class="d-flex a-base">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">1 utente</div>
+                                <div class="mg-l-5">Nessun limite di spazio per i file</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Cartelle offline su dispositivi mobili</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Risparmio del 50% rispetto alle iscrizioni singole</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Possibilità di inserire nuovi membri del team</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Gestione dei permessi in base ai ruoli</div>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Enterprise 1 -->
                 <div class="plan-column plan-border">
-                    <div class="txt-center plan-name pd-5"><i class="fa-solid fa-user"></i> Singolo</div>
+                    <div class="txt-center plan-name pd-5"><i class="fa-solid fa-building"></i> Azienda</div>
                     <div class="pd-r-25 pd-l-25">
-                    <!-- <div class="width-80 mg-auto"> -->
-                        <h3 class="pd-t-30 pd-b-20">Professional</h3>
-                        <div><strong>€ 12.00</strong></div>
-                        <div class="txt-secondary">/mese</div>
+                        <h3 class="pd-t-30 pd-b-20">Enterprise</h3>
+                        <div><strong>Contattaci</strong></div>
+                        <div class="txt-secondary">-</div>
                         <ul class="pd-t-30 pd-b-40 c-flex">
                             <li class="d-flex a-base">
                                 <i class="fa-solid fa-user"></i>
-                                <div class="mg-l-5">1 utente</div>
+                                <div class="mg-l-5">10 o più utenti</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-folder"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Soluzioni personalizzabili per la tua azienda</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-share-nodes"></i>
-                                <div class="mg-l-5">Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                                <div class="mg-l-5">Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
                             </li>
                         </ul>
-                        <a href="" class="btn btn-full mg-b-30 txt-center">Prova gratis per 30 giorni</a>
+                        <a href="" class="btn btn-full mg-b-30 txt-center">Contattaci</a>
                         <div class="mg-b-30">oppure <a href="" class="a-std">acquista ora</a></div>
                         <hr class="width-20 gray">
                         <h4 class="mg-t-40">Punti salienti del piano</h4>
                         <ul class="pd-t-30 pd-b-40 c-flex">
                             <li class="d-flex a-base">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">1 utente</div>
+                                <div class="mg-l-5">Cartelle offline su dispositivi mobili</div>
                             </li>
                             <li class="d-flex a-base pd-t-10">
                                 <i class="fa-solid fa-check check-ok"></i>
-                                <div class="mg-l-5">5 TB di spazio di archiviazione sicuro</div>
+                                <div class="mg-l-5">Servizio assistenza 24/h</div>
+                            </li>
+                            <li class="d-flex a-base pd-t-10">
+                                <i class="fa-solid fa-check check-ok"></i>
+                                <div class="mg-l-5">Possibilità di personalizzazione totale</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-<!-- BR o padding? -->
             <br>
             <!-- Enterprise 2 -->
             <div class="plan-border">
@@ -191,7 +193,6 @@
                 <div class="d-flex sp-between pd-r-25 pd-l-25 pd-t-30 pd-b-20">
                     <div class="">
                         <h3 class="pd-b-20">Enterprise</h3>
-<!-- div o p? -->
                         <p class="pd-b-40"><strong>Contatta l'ufficio vendite per i prezzi</strong></p>
                         <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
                     </div>
@@ -201,6 +202,7 @@
                 </div>
             </div>
         </section>
+        <!-- section partner -->
         <section class="container-800 mg-auto pd-t-80 d-flex">
             <div class="right">
                 <img src="./img/partner.png" alt="Dropbox partner">
@@ -211,69 +213,71 @@
                     <a href="" class="btn-2 btn-border">Trova un partner</a>
             </div>
         </section>
-        <section class=" container-800 mg-auto pd-t-80">
+        <!-- section features -->
+        <section class="container-800 mg-auto pd-t-80">
             <h2 class="txt-center">Esegui più operazioni con Dropbox Business</h2>
-            <div class=" mg-t-40 d-flex sp-between wrap gap">
-                <div class=" c-flex card">
-                    <div class="">
+            <div class="mg-t-40 d-flex sp-between wrap gap">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-switching-tools.png" alt="tools">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
-                <div class=" c-flex card">
-                    <div class="">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-send-files-it.png" alt="transfer">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
-                <div class=" c-flex card">
-                    <div class="">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-coordinate-it.png" alt="sale">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
-                <div class=" c-flex card">
-                    <div class="">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-integrations-it.png" alt="integrations">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
-                <div class=" c-flex card">
-                    <div class="">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-multi-device.png" alt="multi-device">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
-                <div class=" c-flex card">
-                    <div class="">
+                <div class="c-flex card">
+                    <div>
                         <img src="./img/business-feature-security.png" alt="security">
                     </div>
-                    <h3 class=" pd-t-20">Passa di meno da uno strumento all'altro</h3>
-                    <p class=" pd-t-20">
+                    <h3>Passa di meno da uno strumento all'altro</h3>
+                    <p>
                         Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="container-800 mg-auto pd-t-80 pd-b-40">
+        <section class="container-800 mg-auto pd-t-80 pd-b-80">
             <h2 class="pd-t-50 pd-b-40 right">Più di 500.000 team utilizzano Dropbox Business</h2>
             <a href="">Scopri di più sui nostri clienti</a>
         </section>
+        <!-- section logo -->
         <section class="width-100 d-flex">
             <div class="width-33 d-flex wrap">
                 <div class="logo" id="logo-designit">
@@ -315,7 +319,7 @@
         </section>
         <section class="width-100 pd-t-80 pd-b-40 bg-section">
             <div class="container-800 mg-auto pd-t-60 pd-b-60 d-flex j-start">
-                <h2 class="right">Porta Dropbox Business nella tua azienda.</h2>
+                <h2 class="right txt-cta">Porta Dropbox Business nella tua azienda.</h2>
                 <a href="" class="left txt-center btn-2">Scopri di più sui nostri clienti</a>
             </div>
         </section>
@@ -336,7 +340,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="container-1200">
+    <footer class="">
         <div class="container-1000 mg-auto">
             <div class="d-flex sp-between pd-b-60">
                 <div>
@@ -344,11 +348,11 @@
                         <li>
                             <h3 class="">Dropbox</h3>
                         </li>
-                        <li><a href="a" class="">Applicazione desktop</a></li>
-                        <li><a href="a" class="">Perchè Dropbox</a></li>
-                        <li><a href="a" class="">Piani</a></li>
-                        <li><a href="a" class="">Sicurezza</a></li>
-                        <li><a href="a" class="">Funzioni</a></li>
+                        <li><a href="#" class="">Applicazione desktop</a></li>
+                        <li><a href="#" class="">Perchè Dropbox</a></li>
+                        <li><a href="#" class="">Piani</a></li>
+                        <li><a href="#" class="">Sicurezza</a></li>
+                        <li><a href="#" class="">Funzioni</a></li>
                     </ul>
                 </div>
                 <div>
@@ -356,11 +360,11 @@
                         <li>
                             <h3 class="">Prodotti</h3>
                         </li>
-                        <li><a href="a" class="">Applicazione desktop</a></li>
-                        <li><a href="a" class="">Perchè Dropbox</a></li>
-                        <li><a href="a" class="">Piani</a></li>
-                        <li><a href="a" class="">Sicurezza</a></li>
-                        <li><a href="a" class="">Funzioni</a></li>
+                        <li><a href="#" class="">Applicazione desktop</a></li>
+                        <li><a href="#" class="">Perchè Dropbox</a></li>
+                        <li><a href="#" class="">Piani</a></li>
+                        <li><a href="#" class="">Sicurezza</a></li>
+                        <li><a href="#" class="">Funzioni</a></li>
                     </ul>
                 </div>
                 <div>
@@ -368,11 +372,11 @@
                         <li>
                             <h3 class="">Azienda</h3>
                         </li>
-                        <li><a href="a" class="">Applicazione desktop</a></li>
-                        <li><a href="a" class="">Perchè Dropbox</a></li>
-                        <li><a href="a" class="">Piani</a></li>
-                        <li><a href="a" class="">Sicurezza</a></li>
-                        <li><a href="a" class="">Funzioni</a></li>
+                        <li><a href="#" class="">Applicazione desktop</a></li>
+                        <li><a href="#" class="">Perchè Dropbox</a></li>
+                        <li><a href="#" class="">Piani</a></li>
+                        <li><a href="#" class="">Sicurezza</a></li>
+                        <li><a href="#" class="">Funzioni</a></li>
                     </ul>
                 </div>
                 <div>
@@ -380,11 +384,11 @@
                         <li>
                             <h3 class="">Supporto</h3>
                         </li>
-                        <li><a href="a" class="">Applicazione desktop</a></li>
-                        <li><a href="a" class="">Perchè Dropbox</a></li>
-                        <li><a href="a" class="">Piani</a></li>
-                        <li><a href="a" class="">Sicurezza</a></li>
-                        <li><a href="a" class="">Funzioni</a></li>
+                        <li><a href="#" class="">Applicazione desktop</a></li>
+                        <li><a href="#" class="">Perchè Dropbox</a></li>
+                        <li><a href="#" class="">Piani</a></li>
+                        <li><a href="#" class="">Sicurezza</a></li>
+                        <li><a href="#" class="">Funzioni</a></li>
                     </ul>
                 </div>
                 <div>
@@ -392,11 +396,11 @@
                         <li>
                             <h3 class="">Community</h3>
                         </li>
-                        <li><a href="a" class="">Applicazione desktop</a></li>
-                        <li><a href="a" class="">Perchè Dropbox</a></li>
-                        <li><a href="a" class="">Piani</a></li>
-                        <li><a href="a" class="">Sicurezza</a></li>
-                        <li><a href="a" class="">Funzioni</a></li>
+                        <li><a href="#" class="">Applicazione desktop</a></li>
+                        <li><a href="#" class="">Perchè Dropbox</a></li>
+                        <li><a href="#" class="">Piani</a></li>
+                        <li><a href="#" class="">Sicurezza</a></li>
+                        <li><a href="#" class="">Funzioni</a></li>
                     </ul>
                 </div>
             </div>
@@ -407,5 +411,4 @@
         </div>
     </footer>
 </body>
-
 </html>
