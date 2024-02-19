@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
 }
 
 ul{
@@ -13,7 +15,7 @@ img{
     width: 100%;
 }
 
-img:NOT(header img){
+img{
     display: block;
 }
 
@@ -39,18 +41,6 @@ body{
     --color-cta: #702a44;
 }
 
-.debug1{
-    border: 2px solid red;
-}
-
-.debug2{
-    border: 2px solid blue;
-}
-
-.debug3{
-    border: 2px solid green;
-}
-
 /* header */
 header{
     background-color: var(--color-bg-hero);
@@ -66,6 +56,11 @@ header{
     background-color: white;
 }
 
+header li:not(.no-pd){
+    padding: 20px;
+}
+
+
 /* main */
 main{
     margin-top: 59px;
@@ -73,6 +68,10 @@ main{
 
 .img-over{
     top: 70px;
+}
+
+#hero a{
+    display: inline-block;
 }
 
 /* summary */
@@ -342,6 +341,10 @@ footer div{
     padding: 15px;
 }
 
+.pd-20{
+    padding: 20px;
+}
+
 .pd-t-10{
     padding-top: 10px;
 }
@@ -408,8 +411,12 @@ h1{
     font-size: 4em;
 }
 
+h2{
+    font-size: 2em;
+}
+
 h3{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .txt-center{
@@ -500,8 +507,8 @@ nav a:NOT(.btn){
     text-decoration: none;
 }
 
-a:NOT(.a-std):hover{
-    text-decoration: underline;
+header li:not(.no-pd):hover{
+    border-bottom: 1px solid var(--color-button);
 }
 
 footer a{
